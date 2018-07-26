@@ -6,22 +6,13 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.example.android.inventoryapp.data.BookContract.BookEntry;
-
-
 /**
  * Created by Tsultrim on 7/4/18.
  */
 
 public class BookDbHelper extends SQLiteOpenHelper {
 
-
-    public BookDbHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
-    }
-
     private static final String DATABASE_NAME = "books.db";
-
-
     private static final int DATABASE_VERSION = 1;
 
     public BookDbHelper(Context context) {
@@ -40,7 +31,6 @@ public class BookDbHelper extends SQLiteOpenHelper {
                 + BookEntry.COLUMN_SUPPLIER_PHONE + " LONG NOT NULL);";
 
         sqLiteDatabase.execSQL(SQL_CREATE_BOOKS_TABLE);
-
     }
 
     @Override

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".EditorActivity">
+    tools:context=".DetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Name"
+            android:hint="REQUIRED"
             android:inputType="textCapWords|textPersonName"
             android:textAlignment="center"
             android:textSize="18sp" />
@@ -54,8 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Price ($)"
-            android:inputType="textCapWords|textPersonName"
+            android:hint="REQUIRED"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
             android:textSize="18sp" />
     </LinearLayout>
@@ -74,16 +74,31 @@
             android:textColor="@android:color/black"
             android:textSize="12sp" />
 
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="-" />
+
         <EditText
             android:id="@+id/edt_book_quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Quantity"
-            android:inputType="textCapWords|textPersonName"
+            android:inputType="number"
+            android:text="@string/quantity_default_value"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="+" />
     </LinearLayout>
 
     <LinearLayout
@@ -106,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Supplier"
+            android:hint="REQUIRED"
             android:inputType="textCapWords|textPersonName"
             android:textAlignment="center"
             android:textSize="18sp" />
@@ -132,9 +147,35 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Phone Number"
-            android:inputType="textCapWords|textPersonName"
+            android:hint="REQUIRED"
+            android:inputType="phone"
             android:textAlignment="center"
             android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/call" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_required"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/fill"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Delete" />
+
 </LinearLayout>

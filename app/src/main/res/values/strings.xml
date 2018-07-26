@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">InventoryApp</string>
+
+    <string name="editor_insert_book_successful">Book saved</string>
+
+    <string name="editor_insert_book_failed">Error with saving book</string>
+
+    <string name="empty_view_msg">Click plus button to start adding books.</string>
+
+    <string name="add_a_book">Add a Book</string>
+
+    <string name="edit_book">Details and Editing</string>
+
+    <string name="editor_update_book_failed">Updating Book Failed</string>
+
+    <string name="editor_update_book_successful">Updating Book Done</string>
+
+    <string name="quantity_default_value">1</string>
+
+    <string name="quantity_sold_out_msg">This item is sold out</string>
+
+    <string name="no_more_stock">No more in Stock</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <string name="discard">Discard</string>
+
+    <string name="keep_editing">Keep Editing</string>
+
+    <string name="editor_delete_book_successful">Book deleted</string>
+
+    <string name="editor_delete_book_failed">Error with deleting Book</string>
+
+    <string name="delete_dialog_msg">Delete this Book?</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="fill">You have to fill the \"REQUIRED\" fields.</string>
+
+    <string name="negative">Negative values are not accepted </string>
 </resources>

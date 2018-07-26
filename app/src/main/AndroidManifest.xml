@@ -17,10 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditorActivity"
-            android:label="Add a Book"
+        <activity android:name=".DetailActivity"
             android:parentActivityName=".MainActivity"
             ></activity>
+
+        <provider
+            android:authorities="com.example.android.books"
+            android:name=".data.BookProvider"
+            android:exported="false"></provider>
     </application>
 
 </manifest>
